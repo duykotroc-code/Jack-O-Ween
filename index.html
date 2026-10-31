@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack O' Ween – Halloween Arcade</title>
+  <meta name="description" content="Jack O' Ween Halloween arcade game với Sweet Catch, Flappy Ween, Dead Cemetery và Momo Ween">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="Jack O' Ween.png" type="image/x-icon">
+</head>
+<body>
+  <section id="lobby-screen" class="lobby-screen">
+    <div class="lobby-panel">
+      <div class="lobby-logo">🎃</div>
+      <h1>Jack O' Ween</h1>
+      <p>Flappy Ween</p>
+      <button id="btn-enter-game" type="button" class="start-btn">Vào game</button>
+    </div>
+  </section>
+
+  <main class="game-shell hidden">
+    <div class="hud">
+      <div class="hud-item">Điểm: <span id="score">0</span></div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="game-canvas" width="900" height="520"></canvas>
+
+      <div id="game-over" class="overlay hidden">
+        <div class="panel over-panel">
+          <h1>Hết giờ!</h1>
+          <p>Điểm: <strong id="final-score">0</strong></p>
+          <button id="btn-restart" type="button">Chơi lại</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <button id="btn-start" type="button" class="start-btn">Bắt đầu</button>
+      <button id="btn-exit" type="button" class="exit-btn">Exit</button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
